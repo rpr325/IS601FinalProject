@@ -22,6 +22,7 @@
 
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
+
         var calendar = new FullCalendar.Calendar(calendarEl, {
             headerToolbar: {
                 left: 'prev,next today',
@@ -29,11 +30,17 @@
                 right: 'dayGridMonth,listYear'
             },
             displayEventTime: false,
-          plugins: [ 'googleCalendarPlugin' ],
+
             googleCalendarApiKey: 'AIzaSyB3lprHLlAYQLLUo7kaUiYWrpqL-n2WME8',
-          events: {
-              googleCalendarId: 'c_l3iqdc4nucatqhf55ia1bam0p4@group.calendar.google.com'
-  }
+
+            events: 'c_l3iqdc4nucatqhf55ia1bam0p4@group.calendar.google.com',
+
+            eventClick: function(arg) {
+
+                window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+                arg.jsEvent.preventDefault();
+            }
         });
         calendar.render();
 });
