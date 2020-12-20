@@ -15,17 +15,21 @@ app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'pitchersData'
 mysql.init_app(app)
 
+@app.route('/')
+def home():
+    user = {'username': 'Corey & Roberto'}
+    return render_template('home.html', title='Home', user=user)
 
-@app.route('/', methods=['GET'])
+@app.route('/index/', methods=['GET'])
 def index():
     user = {'username': 'Corey & Roberto'}
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport')
     result = cursor.fetchall()
-    return render_template('index.html', title='Home', user=user, pitchers=result)
+    return render_template('index.html', user=user, pitchers=result)
 
 
-@app.route('/view/<int:pitcher_id>', methods=['GET'])
+@app.route('/index/view/<int:pitcher_id>', methods=['GET'])
 def record_view(pitcher_id):
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport WHERE id=%s', pitcher_id)
@@ -77,7 +81,7 @@ def form_delete_post(pitcher_id):
     return redirect("/", code=302)
 
 
-@app.route('/api/v1/pitchers', methods=['GET'])
+@app.route('/index/api/v1/pitchers', methods=['GET'])
 def api_browse() -> str:
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport')
