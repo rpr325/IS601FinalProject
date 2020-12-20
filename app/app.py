@@ -20,6 +20,11 @@ def home():
     user = {'username': 'Corey & Roberto'}
     return render_template('home.html', title='Home', user=user)
 
+@app.route('/calendar/')
+def calendar():
+    user = {'username': 'Corey & Roberto'}
+    return render_template('calendar.html', user=user)
+
 @app.route('/index/', methods=['GET'])
 def index():
     user = {'username': 'Corey & Roberto'}
