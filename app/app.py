@@ -15,6 +15,9 @@ app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'pitchersData'
 mysql.init_app(app)
 
+@app.route('/home/')
+def home():
+    return render_template('home.html')
 
 @app.route('/', methods=['GET'])
 def index():
