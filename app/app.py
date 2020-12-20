@@ -17,7 +17,8 @@ mysql.init_app(app)
 
 @app.route('/home/')
 def home():
-    return render_template('home.html')
+    user = {'username': 'Corey & Roberto'}
+    return render_template('home.html', title='Home', user=user)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -25,7 +26,7 @@ def index():
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport')
     result = cursor.fetchall()
-    return render_template('index.html', title='Home', user=user, pitchers=result)
+    return render_template('index.html', user=user, pitchers=result)
 
 
 @app.route('/view/<int:pitcher_id>', methods=['GET'])
