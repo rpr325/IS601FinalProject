@@ -81,7 +81,7 @@ def form_delete_post(pitcher_id):
     return redirect("/", code=302)
 
 
-@app.route('/api/v1/pitchers', methods=['GET'])
+@app.route('/index/api/v1/pitchers', methods=['GET'])
 def api_browse() -> str:
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport')
