@@ -15,12 +15,12 @@ app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'pitchersData'
 mysql.init_app(app)
 
-@app.route('/home/')
+@app.route('/')
 def home():
     user = {'username': 'Corey & Roberto'}
     return render_template('home.html', title='Home', user=user)
 
-@app.route('/', methods=['GET'])
+@app.route('/index/', methods=['GET'])
 def index():
     user = {'username': 'Corey & Roberto'}
     cursor = mysql.get_db().cursor()
