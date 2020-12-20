@@ -96,7 +96,7 @@ def api_browse() -> str:
     return resp
 
 
-@app.route('/api/v1/pitchers/<int:pitcher_id>', methods=['GET'])
+@app.route('/index/api/v1/pitchers/<int:pitcher_id>', methods=['GET'])
 def api_retrieve(pitcher_id) -> str:
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport WHERE id=%s', pitcher_id)
