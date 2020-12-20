@@ -1,6 +1,18 @@
 {% extends "layout.html" %}
 {% block head %}
+    <link href="{{ url_for('static', filename='main.min.css') }}" rel='stylesheet' />
+    <script src="{{ url_for('static', filename='main.min.js') }}"></script>
+    <script>
 
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
 {% endblock %}
 
 {% block content %}
