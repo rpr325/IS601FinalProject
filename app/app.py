@@ -29,7 +29,7 @@ def index():
     return render_template('index.html', user=user, pitchers=result)
 
 
-@app.route('/view/<int:pitcher_id>', methods=['GET'])
+@app.route('/index/view/<int:pitcher_id>', methods=['GET'])
 def record_view(pitcher_id):
     cursor = mysql.get_db().cursor()
     cursor.execute('SELECT * FROM tblPitchersImport WHERE id=%s', pitcher_id)
