@@ -12,7 +12,8 @@ Perform research and develop two unique features and integrate it into the Pytho
 
 **Features**
 
- - Create a login and registration process that includes email verification (completed by Corey).   
+ - Create a login and registration process that includes email verification (completed by Corey).
+   
  - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto).
 
 
