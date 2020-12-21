@@ -16,9 +16,13 @@ app.config['MYSQL_DATABASE_DB'] = 'pitchersData'
 mysql.init_app(app)
 
 @app.route('/')
-def home():
+def mainindex():
+    return 'hello, world!'
+
+@app.route('/project/')
+def project():
     user = {'username': 'Corey & Roberto'}
-    return render_template('home.html', title='Home', user=user)
+    return render_template('home.html', user=user)
 
 @app.route('/calendar/')
 def calendar():
