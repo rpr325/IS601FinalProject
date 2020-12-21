@@ -15,9 +15,14 @@ app.config['MYSQL_DATABASE_PORT'] = 3306
 app.config['MYSQL_DATABASE_DB'] = 'pitchersData'
 mysql.init_app(app)
 
-@app.route('/')
+@app.route("/")
 def mainindex():
-    return 'hello, world!'
+    return render_template("mainindex.html")
+
+@app.route("/dashboard/")
+def dashboard():
+    return render_template("dashboard.html")
+
 
 @app.route('/project/')
 def project():
