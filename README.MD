@@ -1,31 +1,27 @@
 # IS601 Web Systems Development
 
-## Project Description
+## Final Project
 
-This project is a homework assignment to learn and demonstrate hot to get Pycharm setup with Docker, Flask, MySQL and GitHub.
+**Project Team**
+ - Corey Williams
+ - Roberto Rutherford
 
-## Homework: Web Application Part 1
-**MySQL Screenshot**
-![query request output](screenshots/query.png)
+**Web Application Repository**
+[IS601 Final Project Github Repository](https://github.com/rpr325/IS601FinalProject)
 
-**Postman Screenshot**
-![postman request output](screenshots/postman.png)
+**Description**
 
-**Localhost Screenshot**
-![postman_request_output](screenshots/localhost.png)
+Perform research and develop two unique features and integrate it into the Python/Docker/Git/MySQL web application (from previous assignment). The objective is to plan, develop, and integrate (2) features together in a final project.The site should be organized thoughtfully and cohesively i.e. not just random stuff thrown together.
 
-## Homework: Web Application Part 2
+**Features**
 
-**Webpage Screenshot**
-![postman_request_output](screenshots/webpage.png)
+ - Create a login and registration process that includes email verification (completed by Corey). [Registration Step by Step]()
+   
+ - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto). [Registration Step by Step]()
 
-**Layout Screenshot**
-![postman_request_output](screenshots/bootstrap.png)
 
-## Homework: Web Application Part 3
+## Install and Run Instructions
 
-**Assignment Screenshot Document**
-
-[Web Application Homwork 3 Submission PDF](https://github.com/rpr325/WebAppAlpha/blob/Homework3/IS601%20WebAppHW3.pdf)
+[Web Application Install and Run Process](IS601%20Final%20Project%20Install%20File.pdf)
 
 
