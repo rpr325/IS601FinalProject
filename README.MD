@@ -7,30 +7,15 @@
  - Roberto Rutherford
 
 **Description**
-Perform research and develop one unique feature per team member and integrate it into the application that you have been making in the previous homework web application project.  I am not providing any resources for this team project other than the list of 3 possible options for your project.  The objective of this is for you to work with your team to plan, develop, and integrate your features together in a final project.  Each persons work should be easily visible on the site and the site should be organized thoughtfully and cohesively i.e. not just random stuff thrown together.  Come up with a concept for your application that uses these three features, 
 
+Perform research and develop two unique features and integrate it into the Python/Docker/Git/MySQL web application (from previous assignment). The objective is to plan, develop, and integrate (2) features together in a final project.The site should be organized thoughtfully and cohesively i.e. not just random stuff thrown together.
 
-## Homework: Web Application Part 1
-**MySQL Screenshot**
-![query request output](screenshots/query.png)
+**Features**
 
-**Postman Screenshot**
-![postman request output](screenshots/postman.png)
+ 1. Corey - Create a login and registration process that includes email verification.  You can use a service like SendGrid to send email and you should look for a Flask Plugin to help.
+ 2. Roberto - Create a calendar display and retrieve data out of Google Calendar.   Allow someone to add an even to their Google Calendar and display it on the page.  You can use the HTML full calendar plugin here (Links to an external site.) and you can probably make an iCal Feed from your Google calendar to feed into it, but you will need to cache the data locally in the database and update the data periodically between each request is made.  For example, if the calendar data has not been updated in 5 minutes, make a request to retrieve the data and update the database and then display that data in the fullCalendar page.
 
-**Localhost Screenshot**
-![postman_request_output](screenshots/localhost.png)
-
-## Homework: Web Application Part 2
-
-**Webpage Screenshot**
-![postman_request_output](screenshots/webpage.png)
-
-**Layout Screenshot**
-![postman_request_output](screenshots/bootstrap.png)
-
-## Homework: Web Application Part 3
-
-**Assignment Screenshot Document**
+## Install and Run Instructions
 
 [Web Application Homwork 3 Submission PDF](https://github.com/rpr325/WebAppAlpha/blob/Homework3/IS601%20WebAppHW3.pdf)
 
