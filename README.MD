@@ -12,13 +12,13 @@ Perform research and develop two unique features and integrate it into the Pytho
 
 **Features**
 
- - Create a login and registration process that includes email verification (completed by Corey).
+ - Create a login and registration process that includes email verification (completed by Corey). [Registration Step by Step]()
    
- - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto).
+ - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto). [Registration Step by Step]()
 
 
 ## Install and Run Instructions
 
-[Web Application Homwork 3 Submission PDF](https://github.com/rpr325/WebAppAlpha/blob/Homework3/IS601%20WebAppHW3.pdf)
+[Web Application Install and Run Process]()
 
 
