@@ -31,8 +31,17 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+        <li>
+           <a class="p-2 text-dark" href="/" title="Home">Home</a>
+        {% if not g.user %}
+          <a class="p-2 text-dark" href="/login">Log In / Register</a>
+        {% else %}
+          <a class="p-2 text-dark" href="/dashboard">Dashboard</a>
+          <a class="p-2 text-dark" href="/logout">Logout</a>
+        {% endif %}
+        </li>
         <li class="nav-item">
-        <a class="nav-link" href="/">Home<span class="sr-only"></span></a>
+        <a class="nav-link" href="/project">Project<span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/calendar">Calendar<span class="sr-only"></span></a>
