@@ -17,7 +17,7 @@ Perform research and develop two unique features and integrate it into the Pytho
 
  - Create a login and registration process that includes email verification (completed by Corey). [Registration Step by Step]()
    
- - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto). [Registration Step by Step]()
+ - Create a FullCalendar display and retrieve data out of Google Calendar. Allow user to add an event to their Google Calendar and display it on the Calendar page (completed by Roberto). [FullCalendar.js Step by Step](IS601%20Final%20Project_Calendar.pdf)
 
 
 ## Install and Run Instructions
